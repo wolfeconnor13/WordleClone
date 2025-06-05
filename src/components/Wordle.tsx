@@ -96,6 +96,14 @@ export default function Wordle() {
           return <Row key={index} currentGuess={row} />;
         })}
         <Keyboard onKeyPress={handleKey} />
+        <footer>
+          <p>
+            This is a copy of the New York Times{" "}
+            <a href="https://nytimes.com/games/wordle">Wordle</a> Game. For
+            Learning Purposes only.
+          </p>
+          <p> - Made by Connor Wolfe </p>
+        </footer>
       </div>
     </div>
   );
